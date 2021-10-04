@@ -13,12 +13,11 @@ function validate() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   if (username == "cube.education.com" && password == "cube123$") {
-    alert("Login successfully");
     window.location = "kwitter_room.html";
     return false;
   } else {
     attempt--;
-    alert("You have left " + attempt + " attempt;");
+   
     if (attempt == 0) {
       document.getElementById("username").disabled = true;
       document.getElementById("password").disabled = true;
